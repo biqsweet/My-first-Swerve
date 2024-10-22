@@ -96,10 +96,10 @@ public class SwerveModuleConstants {
         turningMotor.setupSignalUpdates(MotorSignal.VOLTAGE);
         turningMotor.setupSignalUpdates(MotorSignal.CLOSED_LOOP_TARGET);
 
-        turningEncoder.setSimulatedEncoderPositionSource(()-> turningMotor.getSystemPosition());
-        turningEncoder.setSimulatedEncoderVelocitySource(()-> turningMotor.getSystemVelocity());
+        turningEncoder.setSimulatedEncoderPositionSource(turningMotor::getSystemPosition);
+        turningEncoder.setSimulatedEncoderVelocitySource(turningMotor::getSystemVelocity);
 
-        DoubleSupplier positionSupplier = ()-> turningEncoder.getEncoderPosition();
+        DoubleSupplier positionSupplier = turningEncoder::getEncoderPosition;
         turningMotor.setExternalPositionSupplier(positionSupplier);
 
         turningMotor.configure(TURNING_MOTOR_CONFIGURATION);

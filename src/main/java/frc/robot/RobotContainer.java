@@ -28,15 +28,6 @@ public class RobotContainer {
         DoubleSupplier strafeSpeed = () -> MathUtil.applyDeadband(-swerveController.getRawAxis(LEFT_X), 0.05);
         DoubleSupplier turningSpeed = () -> MathUtil.applyDeadband(-swerveController.getRawAxis(RIGHT_X), 0.05);
 
-        /*
-        forwardSpeed,
-        strafeSpeed,
-        turningSpeed
-        double yDeadbandValue = MathUtil.applyDeadband(forwardSpeed.getAsDouble(),0.05);
-        double xDeadbandValue = MathUtil.applyDeadband(strafeSpeed.getAsDouble(),0.05);
-        double rotationDeadbandValue = MathUtil.applyDeadband(turningSpeed.getAsDouble(),0.05);
-         */
-
         SWERVE.setDefaultCommand(
                 SWERVE.driveSelfRelative(
                         forwardSpeed,
