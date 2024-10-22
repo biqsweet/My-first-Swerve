@@ -1,0 +1,76 @@
+{
+  "HALProvider": {
+    "Other Devices": {
+      "window": {
+        "visible": false
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo"
+    }
+  },
+  "NetworkTables": {
+    "transitory": {
+      "AdvantageKit": {
+        "ARM_MOTOR": {
+          "open": false
+        },
+        "Kicker": {
+          "open": false
+        },
+        "Motors": {
+          "driveMotor0": {
+            "open": false
+          },
+          "driveMotor1": {
+            "open": false
+          },
+          "driveMotor2": {
+            "open": false
+          },
+          "driveMotor3": {
+            "open": false
+          },
+          "turningMotor0": {
+            "open": false
+          }
+        },
+        "RL_STEER_MOTOR": {
+          "open": false
+        }
+      },
+      "SmartDashboard": {
+        "AutoChooser": {
+          "open": false
+        },
+        "Mechanism": {
+          "open": false
+        },
+        "Mechanisms": {
+          "open": false
+        },
+        "TunableNumbers": {
+          "Swerve": {
+            "open": false
+          },
+          "flywheel": {
+            "open": false
+          },
+          "open": false
+        },
+        "open": false,
+        "physics": {
+          "open": false
+        }
+      }
+    }
+  },
+  "NetworkTables Info": {
+    "visible": true
+  },
+  "NetworkTables View": {
+    "visible": false
+  }
+}
